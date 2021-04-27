@@ -6,7 +6,7 @@
 # Author 
 - Charles Spahn
 # Project Name
-## __"Zellis"__ (kinda like trellis) or __"Plant-Fu"__
+## __"Zellis"__ (kinda like trellis)
 - Zellis is like "FarmVilleLand" but even better because you
 can see the real life fruits of your labor!
 
