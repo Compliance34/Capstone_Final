@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from zellis.models import Post
+from django.contrib.auth.models import User
 
 class PostSerializer(serializers.ModelSerializer):
 
