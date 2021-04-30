@@ -32,6 +32,7 @@ const Zm = new Vue({
         }
     },
     created: function() {
+        console.log('load zellis worked')
         this.loadZellis()
     },
     mounted: function() {

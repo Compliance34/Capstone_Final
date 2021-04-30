@@ -10,7 +10,7 @@ class Post(models.Model):
     image = models.ImageField(upload_to='media')
 
     def __str__(self):
-        return self.author
+        return self.author.username
 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
