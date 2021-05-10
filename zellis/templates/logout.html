@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>You have been logged out!</h1>
+<h1>Have a Zellis Day!</h1>
+
+<h1>Login?</h1>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Logout">
+    </form>
+{% endblock content %}
