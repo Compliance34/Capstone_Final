@@ -11,6 +11,7 @@ class SignUpView(CreateView):
     template_name = 'signup.html'
     success_url = reverse_lazy('login')
 
+
 class UserProfileView(DetailView):
     model = User
     template_name = 'user_profile.html'

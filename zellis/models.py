@@ -13,11 +13,14 @@ class Post(models.Model):
         return self.author.username
 
 class Comment(models.Model):
+    created_date = models.DateTimeField(auto_now_add=True)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     body = models.CharField(max_length=512)
 
 
 class Like(models.Model):
+    created_date = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     post = models.ForeignKey(Post, on_delete=models.CASCADE)
     like = models.BooleanField(null=True)
 
